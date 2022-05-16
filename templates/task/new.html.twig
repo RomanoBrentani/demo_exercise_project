@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Create new Task{% endblock %}
+
+{% block body %}
+{{ include('task/_form.html.twig', { buttonLabel: 'edit'})}}
+{% endblock %}
+
+

@@ -1,0 +1,27 @@
+div class="d-flex justify-content-around m-2 ">
+    <div class="align-self-center card">
+        <form method="post" action="{{ path('new_task') }}">
+            <div class="card-header">
+                <h1>Create a new Task</h1>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label>Title</label>
+                    <input class="form-control" type="text">
+                </div>
+                <div class="mb-3">
+                    <label>Description</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label>Finishing Date</label>
+                    <input type="date" class="form-control"/>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary">create Task</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>

@@ -10,13 +10,13 @@ use Symfony\Component\Routing\Annotation\Route;
 class ConferenceController extends AbstractController
 {
     /**
-     * @Route("/conference", name="conference")
+     * @Route("/conference", name="app_conference")
      */
-    public function index(Request  $request): Response
+    public function index(): Response
     {
 
         return $this->render('conference/index.html.twig', [
-            'controller_name' => 'ConferenceController',
+            'controller_name' => 'Mein Kontroller',
         ]);
     }
 }

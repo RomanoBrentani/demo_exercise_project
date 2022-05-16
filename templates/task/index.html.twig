@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Your Tasks{% endblock %}
+
+{% block body %}
+    {%for task in tasks %}
+    <h4>{{task}}</h4>
+        <p href="/task/{{task.id}}">View</p>
+    {% endfor %}
+
+    <div class="card">
+        <button class="btn-primary" >Add new Task</button>
+    </div>
+{% endblock %}
